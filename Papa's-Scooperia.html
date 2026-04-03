@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Papa's Scooperia Fullscreen</title>
+<title>Papa's Scooperia Fullscreen x4</title>
 
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-L7856P3VNT"></script>
@@ -27,16 +27,17 @@ html, body {
   overflow: hidden;
 }
 
-/* Game wrapper fills entire screen */
 #gameWrapper {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: scale(4); /* make 4x bigger */
+  transform-origin: top left; /* adjust starting point */
 }
 
-/* SWF object stretches to full width and height */
+/* Make SWF object fill the wrapper */
 #gameWrapper object,
 #gameWrapper embed {
   width: 100%;
